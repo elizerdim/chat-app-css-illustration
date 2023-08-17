@@ -54,3 +54,16 @@ body::after {
   border-radius: 100% 100% 0 0;
   background-color: var(--light-grayish-violet);
 }
+
+.phone {
+  background-color: var(--light-grayish-violet);
+  width: 15em;
+  border-left: .5em solid var(--white);
+  border-right: .5em solid var(--white);
+  border-top: .7em solid var(--white);
+  border-bottom: .7em solid var(--white);
+  border-radius: 1.7em;
+  height: 30em;
+  margin: 4em auto 0;
+  box-shadow: 3px 10px 35px rgba(0, 0, 0, 0.125);
+}
