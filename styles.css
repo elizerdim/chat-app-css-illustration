@@ -1,4 +1,6 @@
 :root {
+  /* font-size: 150%; */
+
   --pale-violet: hsl(276, 100%, 81%); /* sub-heading at the top of the app UI */
   --moderate-violet: hsl(276, 55%, 52%); /* chat on the left */
   --desaturated-dark-violet: hsl(271, 15%, 43%); /* chat on the right */
@@ -29,6 +31,7 @@
 
 body {
   background-color: var(--white);
+  font-family: Rubik;
 }
 
 body::before {
@@ -66,4 +69,66 @@ body::after {
   height: 30em;
   margin: 4em auto 0;
   box-shadow: 3px 10px 35px rgba(0, 0, 0, 0.125);
+}
+
+.phone__header {
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  padding: 1.8em 1em .5em;
+  border-radius: 1.2em 1.2em .5em .5em;
+  display: flex;
+  gap: .5em;
+}
+
+.phone::before {
+  content: "";
+  display: block;
+  width: 8em;
+  height: 1.7em;
+  border-radius: 0 0 .8em .8em;
+  background-color: var(--white);
+  position: absolute;
+  top: 4em;
+  left: calc(50% - 4em);
+  z-index: 1;
+}
+
+.chevron-left {
+  width: .5em;
+  fill: var(--white);
+  margin-bottom: .3em;
+}
+
+.person-info {
+  color: var(--white);
+  display: flex;
+  gap: .5em;
+  flex-basis: 100%;
+}
+
+.person-info > figure {
+  width: 1.6em;
+  flex-shrink: 0;
+}
+
+.person-info img {
+  width: 100%;
+  border: .05em solid var(--white);
+  border-radius: 100%;
+}
+
+.person-name {
+  font-size: .7em;
+}
+
+.person-availability {
+  font-size: .5em;
+  letter-spacing: .08em;
+  font-weight: 400;
+  color: var(--pale-violet);
+  margin-top: .3em;
+}
+
+.ellipsis-vertical {
+  fill: var(--white);
+  width: .2em;
 }
