@@ -167,6 +167,7 @@ body::after {
   color: var(--moderate-violet);
   background-color: var(--moderate-violet-transparent);
   border-radius: 1em 1em 1em .3em;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.125);
 }
 
 .sender-msg {
