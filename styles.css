@@ -79,6 +79,7 @@ body::after {
   border-radius: 1.2em 1.2em .5em .5em;
   display: flex;
   gap: .5em;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.125);
 }
 
 .phone::before {
