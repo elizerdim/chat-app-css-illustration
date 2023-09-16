@@ -242,3 +242,19 @@ body::after {
   fill: var(--very-dark-desaturated-violet);
   width: 3em;
 }
+
+main {
+  text-align: center;
+}
+
+.title {
+  color: var(--very-dark-desaturated-violet);
+  font-weight: 500;
+  margin: 2em 0 1em;
+}
+
+.description {
+  color: var(--dark-grayish-violet);
+  line-height: 2em;
+  margin: 0 1.5em;
+}
