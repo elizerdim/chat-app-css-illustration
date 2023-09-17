@@ -250,11 +250,12 @@ main {
 .title {
   color: var(--very-dark-desaturated-violet);
   font-weight: 500;
-  margin: 2em 0 1em;
+  font-size: 2.5rem;
+  margin: 2em 0 .7em;
 }
 
 .description {
   color: var(--dark-grayish-violet);
   line-height: 2em;
-  margin: 0 1.5em;
+  margin: 0 2em;
 }
