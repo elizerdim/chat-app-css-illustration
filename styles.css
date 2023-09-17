@@ -64,6 +64,7 @@ body::after {
 }
 
 .phone {
+  position: relative;
   background-color: var(--light-grayish-violet);
   width: 15em;
   height: 31.35em;
@@ -93,7 +94,7 @@ body::after {
   border-radius: 0 0 .8em .8em;
   background-color: var(--white);
   position: absolute;
-  top: 4em;
+  top: -.7em;
   left: calc(50% - 4em);
   z-index: 1;
 }
