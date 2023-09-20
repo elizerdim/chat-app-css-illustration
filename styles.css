@@ -267,19 +267,19 @@ main {
   margin: 0 2em;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   .container::before {
-    left: -80px;
-    width: 500px;
-    height: 700px;
-    border-radius: 0 0 400px 400px;
+    left: -5%;
+    width: 35%;
+    height: 85%;
+    border-radius: 0 0 1000px 1000px;
   }
   
   .container::after {
-    right: -270px;
-    width: 600px;
-    height: 680px;
-    border-radius: 400px 400px 0 0;
+    right: -18%;
+    width: 42%;
+    height: 80%;
+    border-radius: 1000px 1000px 0 0;
   }
 
   .container {
