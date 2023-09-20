@@ -36,7 +36,7 @@ body {
   font-family: Rubik;
 }
 
-.container {
+.main-container {
   position: relative;
   overflow-x: hidden;
   padding: 4em 0;
@@ -48,7 +48,7 @@ body {
   align-items: center;
 }
 
-.container::before {
+.main-container::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -60,7 +60,7 @@ body {
   background: linear-gradient(30deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%) 180%);
 }
 
-.container::after {
+.main-container::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -108,35 +108,35 @@ body {
   z-index: 1;
 }
 
-.chevron-left {
+.phone__chevron-left {
   width: .5em;
   fill: var(--white);
   margin-bottom: .3em;
 }
 
-.person-info {
+.phone__person-info {
   color: var(--white);
   display: flex;
   gap: .5em;
   flex-basis: 100%;
 }
 
-.person-info > figure {
+.phone__person-info > figure {
   width: 1.6em;
   flex-shrink: 0;
 }
 
-.person-info img {
+.phone__person-info img {
   width: 100%;
   border: .05em solid var(--white);
   border-radius: 100%;
 }
 
-.person-name {
+.phone__person-name {
   font-size: .7em;
 }
 
-.person-availability {
+.phone__person-availability {
   font-size: .5em;
   letter-spacing: .08em;
   font-weight: 400;
@@ -144,19 +144,19 @@ body {
   margin-top: .3em;
 }
 
-.ellipsis-vertical {
+.phone__ellipsis-vertical {
   fill: var(--white);
   width: .2em;
 }
 
-.chat {
+.phone__chat {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 22.5em;
 }
 
-.msg {
+.phone__msg {
   font-size: .5em;
   margin: .5em 1em;
   width: 60%;
@@ -176,21 +176,21 @@ body {
   transform: translateY(0);
 }
 
-.receiver-msg {
+.phone__msg--receiver {
   color: var(--moderate-violet);
   background-color: var(--moderate-violet-transparent);
   border-radius: 1em 1em 1em .3em;
   box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.125);
 }
 
-.sender-msg {
+.phone__msg--sender {
   background-color: var(--white);
   border-radius: 1em 1em .3em 1em;
   margin-left: auto;
   box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.125);
 }
 
-.dog-images {
+.phone__msg--dog-images {
   width: 80%;
   text-align: right;
   padding: 0;
@@ -198,14 +198,14 @@ body {
   margin-top: 2em;
 }
 
-.dog-image {
+.phone__msg--dog-image {
   width: 5em;
   border-radius: 1em;
   margin-left: .6em;
   vertical-align: bottom;
 }
 
-.walk-option {
+.phone__msg--walk-option {
   background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   color: var(--white);
   width: 70%;
@@ -216,23 +216,23 @@ body {
   align-items: center;
 }
 
-.walk-option__circle {
+.phone__msg--walk-option-circle {
   width: 1.5em;
   margin-right: 1em;
   fill: var(--very-light-magenta);
 }
 
-.walk-option__duration {
+.phone__msg--walk-option-duration {
   letter-spacing: .05em;
   flex-basis: 65%;
 }
 
-.walk-option__price {
+.phone__msg--walk-option-price {
   font-size: 1.5em;
   font-weight: 700;
 }
 
-.new-msg-box {
+.phone__new-msg {
   font-size: .5em;
   background-color: var(--white);
   width: 27em;
@@ -246,28 +246,28 @@ body {
   z-index: 999;
 }
 
-.new-msg-box__placeholder-text {
+.phone__new-msg-placeholder-text {
   color: var(--grayish-blue);
   font-size: 1.2em;
 }
 
-.new-msg-box__send-btn {
+.phone__new-msg-send-btn {
   fill: var(--very-dark-desaturated-violet);
   width: 3em;
 }
 
-main {
+.main-content {
   text-align: center;
 }
 
-.title {
+.main-content__title {
   color: var(--very-dark-desaturated-violet);
   font-weight: 500;
   font-size: 2.5rem;
   margin: 2em 0 .7em;
 }
 
-.description {
+.main-content__description {
   color: var(--dark-grayish-violet);
   line-height: 2em;
   margin: 0 2em;
@@ -275,21 +275,21 @@ main {
 }
 
 @media only screen and (min-width: 900px) {
-  .container::before {
+  .main-container::before {
     left: -5%;
     width: 35%;
     height: 85%;
     border-radius: 0 0 1000px 1000px;
   }
   
-  .container::after {
+  .main-container::after {
     right: -18%;
     width: 42%;
     height: 80%;
     border-radius: 1000px 1000px 0 0;
   }
   
-  .wrapper {
+  .flex-container {
     display: flex;
     gap: 15%; 
     margin: 0 auto;
@@ -298,16 +298,16 @@ main {
     max-width: 950px;
   }
 
-  main {
+  .main-content {
     align-self: center;
     text-align: left;
   }
 
-  .title {
+  .main-content__title {
     margin-top: 0;
   }
 
-  .description {
+  .main-content__description {
     margin-left: 0;
   }
 }

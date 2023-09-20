@@ -12,52 +12,52 @@
   <title>Chat App</title>
 </head>
 <body>
-  <div class="container">
-    <div class="wrapper">
+  <div class="main-container">
+    <div class="flex-container">
       <aside class="phone">
         <header class="phone__header">
-          <svg class="chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-          <div class="person-info">
+          <svg class="phone__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+          <div class="phone__person-info">
             <figure>
               <img src="./images/avatar.jpg" alt="picture of Samuel Green">
             </figure>
             <div>
-              <p class="person-name">Samuel Green</p>
-              <p class="person-availability">Available to Walk</p>
+              <p class="phone__person-name">Samuel Green</p>
+              <p class="phone__person-availability">Available to Walk</p>
             </div>
           </div>
-          <svg class="ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+          <svg class="phone__ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
         </header>
-        <div class="chat">
-          <p class="msg receiver-msg">That sounds great. I'd be happy to discuss more.</p>
-          <p class="msg receiver-msg">Could you send over some pictures of your dog, please?</p>
-          <figure class="msg dog-images">
-            <img class="dog-image" src="./images/dog-image-1.jpg" alt="orange dog with its tongue out looking happy">
-            <img class="dog-image" src="./images/dog-image-2.jpg" alt="orange dog sitting on sand at the beach">
-            <img class="dog-image" src="./images/dog-image-3.jpg" alt="orange puppy with a big stick in its mouth">
+        <div class="phone__chat">
+          <p class="phone__msg phone__msg--receiver">That sounds great. I'd be happy to discuss more.</p>
+          <p class="phone__msg phone__msg--receiver">Could you send over some pictures of your dog, please?</p>
+          <figure class="phone__msg phone__msg--dog-images">
+            <img class="phone__msg--dog-image" src="./images/dog-image-1.jpg" alt="orange dog with its tongue out looking happy">
+            <img class="phone__msg--dog-image" src="./images/dog-image-2.jpg" alt="orange dog sitting on sand at the beach">
+            <img class="phone__msg--dog-image" src="./images/dog-image-3.jpg" alt="orange puppy with a big stick in its mouth">
           </figure>
-          <p class="msg sender-msg">Here are a few pictures. She's a happy girl!</p>
-          <p class="msg sender-msg">Can you make it?</p>
-          <p class="msg receiver-msg">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-          <div class="msg receiver-msg walk-option">
-            <svg class="walk-option__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
-            <p class="walk-option__duration">30 minute walk</p>
-            <p class="walk-option__price">$29</p>
+          <p class="phone__msg phone__msg--sender">Here are a few pictures. She's a happy girl!</p>
+          <p class="phone__msg phone__msg--sender">Can you make it?</p>
+          <p class="phone__msg phone__msg--receiver">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          <div class="phone__msg phone__msg--receiver phone__msg--walk-option">
+            <svg class="phone__msg--walk-option-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+            <p class="phone__msg--walk-option-duration">30 minute walk</p>
+            <p class="phone__msg--walk-option-price">$29</p>
           </div>
-          <div class="msg receiver-msg walk-option">
-            <svg class="walk-option__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
-            <p class="walk-option__duration">1 hour walk</p>
-            <p class="walk-option__price">$49</p>
+          <div class="phone__msg phone__msg--receiver phone__msg--walk-option">
+            <svg class="phone__msg--walk-option-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+            <p class="phone__msg--walk-option-duration">1 hour walk</p>
+            <p class="phone__msg--walk-option-price">$49</p>
           </div>
         </div>
-        <div class="new-msg-box">
-          <p class="new-msg-box__placeholder-text">Type a message...</p>
-          <svg class="new-msg-box__send-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
+        <div class="phone__new-msg">
+          <p class="phone__new-msg-placeholder-text">Type a message...</p>
+          <svg class="phone__new-msg-send-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/></svg>
         </div>
       </aside>
-      <main>
-        <h1 class="title">Simple booking</h1>
-        <p class="description">Stay in touch with your dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+      <main class="main-content">
+        <h1 class="main-content__title">Simple booking</h1>
+        <p class="main-content__description">Stay in touch with your dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
       </main>
     </div>
   </div>
