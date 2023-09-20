@@ -57,7 +57,7 @@ body {
   width: 100%;
   height: 50%;
   border-radius: 0 0 100% 100%;
-  background: linear-gradient(30deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%) 180%);
+  background: linear-gradient(30deg, var(--light-violet), var(--light-magenta) 180%);
 }
 
 .main-container::after {
@@ -87,7 +87,7 @@ body {
 }
 
 .phone__header {
-  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  background: linear-gradient(to right, var(--light-violet), var(--light-magenta));
   padding: 1.8em 1em .5em;
   border-radius: 1.2em 1.2em .5em .5em;
   display: flex;
@@ -206,7 +206,7 @@ body {
 }
 
 .phone__msg--walk-option {
-  background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  background: linear-gradient(to left, var(--light-violet), var(--light-magenta));
   color: var(--white);
   width: 70%;
   max-width: 70%;
